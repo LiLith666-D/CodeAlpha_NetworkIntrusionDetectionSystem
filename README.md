@@ -29,24 +29,6 @@ It is developed as part of the CodeAlpha Cyber Security Internship – Task 4 an
 
 ---
 
-##  Project Structure
-CodeAlpha_NIDS/
-│
-├── config/
-│   ├── snort.lua
-│   └── snort_defaults.lua
-│
-├── rules/
-│   ├── local.rules
-│   └── file_magic.rules
-│
-├── logs/
-│   └── alert_fast.txt
-│
-└── README.md
-
----
-
 ##  Technologies Used
 - Snort++ (Snort 3.10.0.0)
 - Linux (Kali Linux / Ubuntu)
