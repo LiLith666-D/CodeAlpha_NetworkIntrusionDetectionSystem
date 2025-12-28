@@ -1,4 +1,4 @@
-# CodeAlpha_NetworkIntrusionDetectionSystem -  Snort++ Based Network Intrusion Detection System
+# CodeAlpha_NetworkIntrusionDetectionSystem -  Snort++ Based NIDS
 
 ##  Overview
 This project implements a Network Intrusion Detection System (NIDS) using Snort++ (Snort 3) to monitor live network traffic and detect suspicious or malicious activities in real time.
