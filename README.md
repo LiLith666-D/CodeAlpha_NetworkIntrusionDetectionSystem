@@ -50,15 +50,13 @@ It is developed as part of the CodeAlpha Cyber Security Internship – Task 4 an
 ---
 
 ##  How to Run
-1. Install Snort++
-2. ```sudo apt install snort```
-   ```snort --version```
-  
-
-3. Navigate to the project directory
+1. Install Snort++  ```sudo apt install snort```
+2. Check version  ```snort --V```
+   
+4. Navigate to the project directory
    ```cd CodeAlpha_NIDS```
 
-4. Run Snort in passive mode
+5. Run Snort in passive mode
    ```sudo snort -c config/snort.lua -i wlan0 -A alert_fast```
 
    (Replace wlan0 with your active network interface)
