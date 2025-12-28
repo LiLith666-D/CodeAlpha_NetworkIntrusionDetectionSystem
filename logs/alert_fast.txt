@@ -2,8 +2,8 @@
 o")~   Snort++ 3.10.0.0
 --------------------------------------------------
 Loading config/snort.lua:
-Loading /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/config/snort_defaults.lua:
-Finished /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/config/snort_defaults.lua:
+Loading CodeAlpha_NIDS/config/snort_defaults.lua:
+Finished CodeAlpha_NIDS/config/snort_defaults.lua:
 	classifications
 	references
 	binder
@@ -68,12 +68,12 @@ Finished /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4
 	file_id
 Finished config/snort.lua:
 Loading file_id.rules_file:
-Loading /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/rules/file_magic.rules:
-Finished /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/rules/file_magic.rules:
+Loading CodeAlpha_NIDS/rules/file_magic.rules:
+Finished CodeAlpha_NIDS/rules/file_magic.rules:
 Finished file_id.rules_file:
 Loading ips.rules:
-Loading /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/rules/local.rules:
-Finished /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/rules/local.rules:
+Loading CodeAlpha_NIDS/rules/local.rules:
+Finished CodeAlpha_NIDS/rules/local.rules:
 Finished ips.rules:
 --------------------------------------------------
 ips policies rule stats
