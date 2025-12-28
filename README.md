@@ -51,13 +51,15 @@ It is developed as part of the CodeAlpha Cyber Security Internship – Task 4 an
 
 ##  How to Run
 1. Install Snort++
-   snort --version
+2. ```sudo apt install snort```
+   ```snort --version```
+  
 
-2. Navigate to the project directory
-   cd CodeAlpha_NIDS
+3. Navigate to the project directory
+   ```cd CodeAlpha_NIDS```
 
-3. Run Snort in passive mode
-   sudo snort -c config/snort.lua -i wlan0 -A alert_fast
+4. Run Snort in passive mode
+   ```sudo snort -c config/snort.lua -i wlan0 -A alert_fast```
 
    (Replace wlan0 with your active network interface)
 
@@ -71,7 +73,7 @@ It is developed as part of the CodeAlpha Cyber Security Internship – Task 4 an
 - FTP Connection Attempt Detected
 
 Alerts are stored in:
-logs/alert_fast.txt
+```logs/alert_fast.txt```
 
 ---
 
