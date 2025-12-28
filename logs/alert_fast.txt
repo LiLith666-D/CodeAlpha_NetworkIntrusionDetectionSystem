@@ -1,0 +1,523 @@
+--------------------------------------------------
+o")~   Snort++ 3.10.0.0
+--------------------------------------------------
+Loading config/snort.lua:
+Loading /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/config/snort_defaults.lua:
+Finished /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/config/snort_defaults.lua:
+	classifications
+	references
+	binder
+	dce_tcp
+	output
+	active
+	alerts
+	daq
+	decode
+	host_tracker
+	hosts
+	network
+	packets
+	process
+	search_engine
+	so_proxy
+	back_orifice
+	dns
+	stream
+	stream_ip
+	stream_icmp
+	stream_tcp
+	stream_udp
+	stream_user
+	stream_file
+	arp_spoof
+	imap
+	netflow
+	normalizer
+	pop
+	rpc_decode
+	sip
+	ssh
+	ssl
+	telnet
+	cip
+	dnp3
+	iec104
+	mms
+	modbus
+	opcua
+	s7commplus
+	dce_smb
+	dce_udp
+	dce_http_proxy
+	dce_http_server
+	gtp_inspect
+	port_scan
+	smtp
+	ftp_server
+	ftp_client
+	ftp_data
+	http_inspect
+	http2_inspect
+	file_policy
+	js_norm
+	appid
+	wizard
+	host_cache
+	trace
+	ips
+	file_id
+Finished config/snort.lua:
+Loading file_id.rules_file:
+Loading /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/rules/file_magic.rules:
+Finished /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/rules/file_magic.rules:
+Finished file_id.rules_file:
+Loading ips.rules:
+Loading /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/rules/local.rules:
+Finished /home/vadapav/Documents/CyberSecurity/Interships/CodeAlpha/Tasks/Task-4/CodeAlpha_NIDS/rules/local.rules:
+Finished ips.rules:
+--------------------------------------------------
+ips policies rule stats
+              id  loaded  shared enabled    file
+               0     224       0     224    config/snort.lua
+--------------------------------------------------
+rule counts
+       total rules loaded: 224
+               text rules: 224
+            option chains: 224
+            chain headers: 5
+--------------------------------------------------
+port rule counts
+             tcp     udp    icmp      ip
+     any       1       0       1       0
+     dst       3       0       0       0
+   total       4       0       1       0
+--------------------------------------------------
+service rule counts          to-srv  to-cli
+                  file_id:      219     219
+                    total:      219     219
+--------------------------------------------------
+fast pattern groups
+                to_server: 1
+                to_client: 1
+--------------------------------------------------
+search engine (ac_bnfa)
+                instances: 2
+                 patterns: 438
+            pattern chars: 2602
+               num states: 1832
+         num match states: 392
+             memory scale: KB
+             total memory: 71.2812
+           pattern memory: 19.6484
+        match list memory: 28.4375
+        transition memory: 22.9453
+appid: MaxRss diff: 2972
+appid: patterns loaded: 300
+--------------------------------------------------
+pcap DAQ configured to passive.
+Commencing packet processing
+Retry queue interval is: 200 ms
+++ [0] wlan0
+12/28-12:25:03.690871 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:04.691780 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:05.693869 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:06.695687 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:07.696932 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:08.698577 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:09.699566 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:10.701526 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:11.703481 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:12.715770 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:13.716739 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:25:14.727815 [**] [1:1000001:1] "ICMP Ping Detected" [**] [Priority: 0] {ICMP} 192.168.1.15 -> 8.8.8.8
+12/28-12:26:58.459613 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5810
+12/28-12:26:58.459629 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:7435
+12/28-12:26:58.482847 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:10626
+12/28-12:26:58.482877 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5985
+12/28-12:26:58.482893 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1098
+12/28-12:26:58.482908 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1521
+12/28-12:26:58.482923 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2525
+12/28-12:26:58.482938 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:10628
+12/28-12:26:58.482953 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2170
+12/28-12:26:58.482967 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1084
+12/28-12:26:58.482982 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:4004
+12/28-12:26:58.482997 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:8082
+12/28-12:26:58.483012 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:444
+12/28-12:26:58.483026 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:500
+12/28-12:26:58.483047 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1151
+12/28-12:26:58.483063 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:9200
+12/28-12:26:58.483086 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2604
+12/28-12:26:58.483100 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1801
+12/28-12:26:58.483115 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:6969
+12/28-12:26:58.483130 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5357
+12/28-12:26:58.483145 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:9071
+12/28-12:26:58.483160 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:99
+12/28-12:26:58.483174 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:10617
+12/28-12:26:58.626387 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46319 -> 8.8.8.8:443
+12/28-12:26:58.626425 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:668
+12/28-12:26:58.626439 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:161
+12/28-12:26:58.626452 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5730
+12/28-12:26:58.626465 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5859
+12/28-12:26:58.626478 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:4126
+12/28-12:26:58.626495 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:3000
+12/28-12:26:58.626509 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1583
+12/28-12:26:58.626522 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:32778
+12/28-12:26:58.626556 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1046
+12/28-12:26:58.626570 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1108
+12/28-12:26:58.626584 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:9929
+12/28-12:26:58.643176 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1083
+12/28-12:26:58.643210 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:2048
+12/28-12:26:58.643227 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1434
+12/28-12:26:58.643243 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:5001
+12/28-12:26:58.643268 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:6567
+12/28-12:26:58.643287 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:10621
+12/28-12:26:58.643303 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1166
+12/28-12:26:58.643319 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:5405
+12/28-12:26:58.643335 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1066
+12/28-12:26:58.643355 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:55555
+12/28-12:26:58.643372 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:10000
+12/28-12:26:58.643396 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:5009
+12/28-12:26:58.643413 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:13722
+12/28-12:26:58.643433 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:8000
+12/28-12:26:58.643449 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1024
+12/28-12:26:58.643465 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1761
+12/28-12:26:58.643482 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:7741
+12/28-12:26:58.643498 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:65389
+12/28-12:26:58.643518 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:89
+12/28-12:26:58.643534 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1001
+12/28-12:26:58.643551 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1044
+12/28-12:26:58.643567 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:100
+12/28-12:26:58.643583 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:5102
+12/28-12:26:58.643603 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:2288
+12/28-12:26:58.643620 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1114
+12/28-12:26:58.643636 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:5907
+12/28-12:26:58.643652 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1524
+12/28-12:26:58.643690 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1500
+12/28-12:26:58.643720 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1900
+12/28-12:26:58.643737 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1042
+12/28-12:26:58.643753 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:3006
+12/28-12:26:58.643776 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:625
+12/28-12:26:58.643793 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:33
+12/28-12:26:58.643812 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:9535
+12/28-12:26:58.690698 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:3268
+12/28-12:26:58.690739 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:389
+12/28-12:26:58.690756 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:3766
+12/28-12:26:58.690771 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:2522
+12/28-12:26:58.690786 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1000
+12/28-12:26:58.690800 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1862
+12/28-12:26:58.690815 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1096
+12/28-12:26:58.690829 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:513
+12/28-12:26:58.690844 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:84
+12/28-12:26:58.714081 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:2190
+12/28-12:26:58.714110 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:720
+12/28-12:26:58.714127 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1658
+12/28-12:26:58.714142 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:7201
+12/28-12:26:58.714163 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1029
+12/28-12:26:58.714183 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:9011
+12/28-12:26:58.714199 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:5910
+12/28-12:26:58.714218 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:6000
+12/28-12:26:58.714233 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:2401
+12/28-12:26:58.714249 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:211
+12/28-12:26:58.714264 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:4848
+12/28-12:26:58.714279 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1057
+12/28-12:26:58.714294 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:2005
+12/28-12:26:58.714309 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1138
+12/28-12:26:58.714328 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:2126
+12/28-12:26:58.714344 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:705
+12/28-12:26:58.714359 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:27353
+12/28-12:26:58.714374 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:5903
+12/28-12:26:58.714389 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:2004
+12/28-12:26:58.714404 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:6123
+12/28-12:26:58.714420 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1122
+12/28-12:26:58.857878 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:8010
+12/28-12:26:58.857921 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:3269
+12/28-12:26:58.857938 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1145
+12/28-12:26:58.857954 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:51493
+12/28-12:26:58.857970 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:26214
+12/28-12:26:58.857987 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:5679
+12/28-12:26:58.858006 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1041
+12/28-12:26:58.858025 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1864
+12/28-12:26:58.858053 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:8443
+12/28-12:26:58.858069 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:64680
+12/28-12:26:58.858086 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:1091
+12/28-12:26:58.874443 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:9535
+12/28-12:26:58.874473 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:33
+12/28-12:26:58.874489 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:625
+12/28-12:26:58.874504 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:3006
+12/28-12:26:58.874519 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1042
+12/28-12:26:58.874533 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1900
+12/28-12:26:58.874548 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1500
+12/28-12:26:58.874563 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1524
+12/28-12:26:58.874578 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5907
+12/28-12:26:58.874593 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1114
+12/28-12:26:58.874608 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2288
+12/28-12:26:58.874622 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5102
+12/28-12:26:58.874637 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:100
+12/28-12:26:58.874651 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1044
+12/28-12:26:58.874666 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1001
+12/28-12:26:58.874681 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:89
+12/28-12:26:58.874696 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:65389
+12/28-12:26:58.874711 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:7741
+12/28-12:26:58.874725 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1761
+12/28-12:26:58.874741 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1024
+12/28-12:26:58.874757 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:8000
+12/28-12:26:58.874774 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:13722
+12/28-12:26:58.874792 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5009
+12/28-12:26:58.874812 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:10000
+12/28-12:26:58.874829 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:55555
+12/28-12:26:58.874846 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1066
+12/28-12:26:58.874862 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5405
+12/28-12:26:58.874878 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1166
+12/28-12:26:58.874895 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:10621
+12/28-12:26:58.874911 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:6567
+12/28-12:26:58.874927 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5001
+12/28-12:26:58.874944 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1434
+12/28-12:26:58.874963 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2048
+12/28-12:26:58.874994 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46314 -> 8.8.8.8:3322
+12/28-12:26:58.921867 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:84
+12/28-12:26:58.921888 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:513
+12/28-12:26:58.921899 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1096
+12/28-12:26:58.921917 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1862
+12/28-12:26:58.921928 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1000
+12/28-12:26:58.921939 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2522
+12/28-12:26:58.921949 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:3766
+12/28-12:26:58.921961 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:389
+12/28-12:26:58.921971 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:3268
+12/28-12:26:58.945297 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1122
+12/28-12:26:58.945322 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:6123
+12/28-12:26:58.945336 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2004
+12/28-12:26:58.945349 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5903
+12/28-12:26:58.945363 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:27353
+12/28-12:26:58.945381 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:705
+12/28-12:26:58.945394 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2126
+12/28-12:26:58.945407 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1138
+12/28-12:26:58.945421 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2005
+12/28-12:26:58.945438 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1057
+12/28-12:26:58.945452 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:4848
+12/28-12:26:58.945465 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:211
+12/28-12:26:58.945477 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2401
+12/28-12:26:58.945490 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:6000
+12/28-12:26:58.945503 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:5910
+12/28-12:26:58.945516 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:9011
+12/28-12:26:58.945529 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1029
+12/28-12:26:58.945541 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:7201
+12/28-12:26:58.945554 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1658
+12/28-12:26:58.945567 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:720
+12/28-12:26:58.945581 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:2190
+12/28-12:26:59.089203 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:1091
+12/28-12:26:59.089234 [**] [1:1000002:1] "TCP SYN Scan Detected" [**] [Priority: 0] {TCP} 192.168.1.15:46316 -> 8.8.8.8:64680
+12/28-12:28:17.818272 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:18.823963 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:19.848330 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:20.875737 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:20.875737 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:21.895733 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:21.895733 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:24.935718 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:24.935718 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:28.999739 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:28.999739 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:59818 -> 8.8.8.8:22
+12/28-12:28:30.465974 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43580 -> 8.8.8.8:22
+12/28-12:28:30.465974 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43580 -> 8.8.8.8:22
+12/28-12:28:31.495728 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43580 -> 8.8.8.8:22
+12/28-12:28:31.495728 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43580 -> 8.8.8.8:22
+12/28-12:28:32.519763 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43580 -> 8.8.8.8:22
+12/28-12:28:32.519763 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43580 -> 8.8.8.8:22
+12/28-12:28:34.165254 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43586 -> 8.8.8.8:22
+12/28-12:28:34.165254 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43586 -> 8.8.8.8:22
+12/28-12:28:35.930568 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:35.930568 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:36.935710 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:36.935710 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:37.959739 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:37.959739 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:38.983740 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:38.983740 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:40.011746 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:40.011746 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:41.031743 [**] [1:1000004:1] "Possible SSH Brute Force Attack" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:28:41.031743 [**] [1:1000003:1] "SSH Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:43598 -> 8.8.8.8:22
+12/28-12:29:36.804587 [**] [1:1000005:1] "FTP Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:34660 -> 8.8.8.8:21
+12/28-12:29:37.831747 [**] [1:1000005:1] "FTP Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:34660 -> 8.8.8.8:21
+12/28-12:29:38.855744 [**] [1:1000005:1] "FTP Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:34660 -> 8.8.8.8:21
+12/28-12:29:39.879742 [**] [1:1000005:1] "FTP Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:34660 -> 8.8.8.8:21
+12/28-12:29:40.903723 [**] [1:1000005:1] "FTP Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:34660 -> 8.8.8.8:21
+12/28-12:29:41.927751 [**] [1:1000005:1] "FTP Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:34660 -> 8.8.8.8:21
+12/28-12:29:43.943735 [**] [1:1000005:1] "FTP Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:34660 -> 8.8.8.8:21
+12/28-12:29:48.103731 [**] [1:1000005:1] "FTP Connection Attempt Detected" [**] [Priority: 0] {TCP} 192.168.1.15:34660 -> 8.8.8.8:21
+^C** caught int signal
+== stopping
+-- [0] wlan0
+--------------------------------------------------
+Packet Statistics
+--------------------------------------------------
+daq
+                 received: 1186
+                 analyzed: 1185
+                    allow: 1183
+                whitelist: 2
+                 rx_bytes: 199242
+--------------------------------------------------
+codec
+                    total: 1185        	(100.000%)
+                      arp: 14          	(  1.181%)
+                      eth: 1185        	(100.000%)
+                    icmp4: 32          	(  2.700%)
+                 icmp4_ip: 3           	(  0.253%)
+                    icmp6: 19          	(  1.603%)
+                 icmp6_ip: 1           	(  0.084%)
+                     ipv4: 1139        	( 96.118%)
+                     ipv6: 32          	(  2.700%)
+                      tcp: 934         	( 78.819%)
+                      udp: 186         	( 15.696%)
+--------------------------------------------------
+Module Statistics
+--------------------------------------------------
+ac_full
+                 searches: 69
+                  matches: 2069
+                    bytes: 23557
+--------------------------------------------------
+appid
+                  packets: 1171
+        processed_packets: 1169
+          ignored_packets: 2
+           total_sessions: 610
+       service_cache_adds: 14
+             bytes_in_use: 2352
+             items_in_use: 14
+--------------------------------------------------
+arp_spoof
+                  packets: 14
+--------------------------------------------------
+back_orifice
+                  packets: 186
+--------------------------------------------------
+binder
+              raw_packets: 16
+                new_flows: 609
+          service_changes: 6
+                 inspects: 625
+--------------------------------------------------
+detection
+                 analyzed: 1185
+               hard_evals: 1038
+                   alerts: 599
+             total_alerts: 599
+                   logged: 599
+--------------------------------------------------
+dns
+                  packets: 42
+                 requests: 23
+                responses: 19
+             dns_over_udp: 42
+--------------------------------------------------
+ips_actions
+                    alert: 599
+--------------------------------------------------
+normalizer
+        test_tcp_trim_win: 6
+           test_tcp_block: 1
+--------------------------------------------------
+port_scan
+                  packets: 1171
+                 trackers: 29
+--------------------------------------------------
+search_engine
+     non_qualified_events: 453
+         qualified_events: 585
+--------------------------------------------------
+ssl
+                  packets: 55
+                  decoded: 55
+             client_hello: 6
+             server_hello: 5
+              certificate: 1
+              server_done: 3
+      client_key_exchange: 1
+      server_key_exchange: 1
+            change_cipher: 12
+       client_application: 23
+       server_application: 20
+     handshakes_completed: 1
+         sessions_ignored: 1
+  max_concurrent_sessions: 3
+--------------------------------------------------
+stream
+                    flows: 609
+             total_prunes: 147
+idle_prunes_proto_timeout: 126
+            closed_prunes: 21
+       tcp_timeout_prunes: 116
+       udp_timeout_prunes: 9
+      icmp_timeout_prunes: 1
+--------------------------------------------------
+stream_icmp
+                 sessions: 8
+                      max: 8
+                  created: 8
+                 released: 8
+--------------------------------------------------
+stream_tcp
+                 sessions: 574
+                      max: 574
+                  created: 574
+                 released: 574
+                 timeouts: 1
+             instantiated: 574
+                   setups: 574
+                 restarts: 6
+         discards_skipped: 1
+         invalid_seq_left: 6
+                   events: 1
+             syn_trackers: 567
+            data_trackers: 7
+              segs_queued: 158
+            segs_released: 158
+                segs_used: 156
+          rebuilt_packets: 71
+            rebuilt_bytes: 41810
+          client_cleanups: 6
+          server_cleanups: 7
+                     syns: 587
+                 syn_acks: 14
+                     rsts: 9
+          rsts_ok_rfc5961: 9
+                     fins: 14
+        partial_fallbacks: 1
+                 max_segs: 18
+                max_bytes: 13863
+--------------------------------------------------
+stream_udp
+                 sessions: 27
+                      max: 27
+                  created: 27
+                 released: 27
+              total_bytes: 83089
+--------------------------------------------------
+wizard
+                tcp_scans: 90
+                 tcp_hits: 6
+               tcp_misses: 1
+                udp_scans: 11
+               udp_misses: 11
+--------------------------------------------------
+Appid Statistics
+--------------------------------------------------
+detected apps and services
+              Application: Services   Clients    Users      Payloads   Misc       Referred  
+                  unknown: 45         16         0          4          0          0         
+--------------------------------------------------
+Summary Statistics
+--------------------------------------------------
+process
+                  signals: 1
+--------------------------------------------------
+timing
+                  runtime: 00:05:40
+                  seconds: 340.861889
+                 pkts/sec: 3
+o")~   Snort exiting
+                          
+
+
