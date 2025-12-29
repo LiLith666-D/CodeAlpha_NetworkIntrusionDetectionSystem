@@ -1,9 +1,8 @@
-# CodeAlpha_NetworkIntrusionDetectionSystem -  Snort++ Based NIDS
+# NetworkIntrusionDetectionSystem using Snort3
 
 ##  Overview
-This project implements a Network Intrusion Detection System (NIDS) using Snort++ (Snort 3) to monitor live network traffic and detect suspicious or malicious activities in real time.
-
-It is developed as part of the CodeAlpha Cyber Security Internship – Task 4 and demonstrates practical intrusion detection using custom rules, protocol inspection, and real-time alert logging.
+- This project implements a Network Intrusion Detection System (NIDS) using Snort++ (Snort 3) to monitor live network traffic and detect suspicious or malicious activities in real time.
+- It demonstrates practical intrusion detection using custom rules, protocol inspection, and real-time alert logging.
 
 ---
 
@@ -50,13 +49,13 @@ It is developed as part of the CodeAlpha Cyber Security Internship – Task 4 an
 ---
 
 ##  How to Run
-1. Install Snort++  ```sudo apt install snort```
-2. Check version  ```snort --V```
-   
-4. Navigate to the project directory
-   ```cd CodeAlpha_NIDS```
-
-5. Run Snort in passive mode
+1. Install Snort++  
+          ```sudo apt install snort```
+2. Check version  
+          ```snort --V```
+3. Navigate to the project directory
+          ```cd CodeAlpha_NIDS```
+4. Run Snort in passive mode
    ```sudo snort -c config/snort.lua -i wlan0 -A alert_fast```
 
    (Replace wlan0 with your active network interface)
@@ -85,11 +84,6 @@ All attacks were successfully detected and logged.
 
 ---
 
-##  Security Note
-This project runs in passive monitoring mode and does not block traffic. It is intended strictly for learning and demonstration purposes.
-
----
-
 ##  Learning Outcomes
 - Hands-on experience with Network Intrusion Detection Systems
 - Writing and testing custom Snort rules
@@ -98,11 +92,12 @@ This project runs in passive monitoring mode and does not block traffic. It is i
 
 ---
 
-##  Author
-Dheekshita R  
-Cyber Security Intern – CodeAlpha
+##  Security Note
+This project runs in passive monitoring mode and does not block traffic. It is intended strictly for learning and demonstration purposes.
 
 ---
 
 ##  Conclusion
 This project demonstrates a fully functional Snort++ based Network Intrusion Detection System capable of detecting multiple network-level attacks in real time. It provides practical exposure to intrusion detection, network security monitoring, and alert analysis.
+
+---
