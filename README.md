@@ -101,3 +101,9 @@ This project runs in passive monitoring mode and does not block traffic. It is i
 This project demonstrates a fully functional Snort++ based Network Intrusion Detection System capable of detecting multiple network-level attacks in real time. It provides practical exposure to intrusion detection, network security monitoring, and alert analysis.
 
 ---
+
+## Author
+
+Dheekshita R
+
+---
